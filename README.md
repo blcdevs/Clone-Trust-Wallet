@@ -16,13 +16,13 @@ https://docs.coinapi.io/#list-all-asset-icons-get
 # Images
 
 <div style="text-align: center">
-    <table>
+   <table>
         <tr>
             <td style="text-align: center">
-                    <img src="assets/SimulatorScreenShot.png" />
-            </td>                         
+                    <img src="assets/SimulatorScreenShot.png"/>
+            </td>            
         </tr>
-    
     </table>
 </div>
+
 
