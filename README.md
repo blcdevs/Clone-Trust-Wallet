@@ -19,7 +19,7 @@ https://docs.coinapi.io/#list-all-asset-icons-get
    <table>
         <tr>
             <td style="text-align: center">
-                    <img src="assets/SimulatorScreenShot.png"/>
+                    <img src="assets/SimulatorScreenShot.png" width=300/>
             </td>            
         </tr>
     </table>
