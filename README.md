@@ -10,7 +10,7 @@ https://docs.coinapi.io/#list-all-asset-icons-get
     - dio:  Http Client
     - flutter_bloc : for State Managment 
     - get_it :  for Dependecy injection
-    - flutter_launcher_icons:  App's icon managment
+    - web_socket_channel:  for WebSocket connections
     - cached_network_image :  Caching network images
 
 # Images

@@ -38,8 +38,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  
-  cupertino_icons: ^1.0.2
+
+
   flutter_bloc: ^8.0.1
   web_socket_channel: ^2.2.0
   get_it: ^7.2.0
