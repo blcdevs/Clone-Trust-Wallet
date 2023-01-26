@@ -1,8 +1,9 @@
+import 'package:clone_trust/app/ui/screen/SDWalkThroughScreen.dart';
+import 'package:clone_trust/app/ui/screen/SDSplashScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:clone_trust/app/bloc/crypto_asset_cubit.dart';
 import 'package:clone_trust/app/bloc/live_prices_cubit.dart';
-import 'package:clone_trust/app/ui/dashboard_page.dart';
 import 'package:clone_trust/repository/repository.dart';
 import 'package:clone_trust/utils/app_routes.dart';
 import 'package:clone_trust/utils/initialize_dependency.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
               CryptoAssetCubit(injector.get<IRepository>()),
         ),
         BlocProvider(create: (BuildContext context) => LivePricesCubit())
-      ], child: const DashboardPage()),
+      ], child: SDWalkThroughScreen()),
       onGenerateRoute: AppRoutes.onGenerateRoute,
       debugShowCheckedModeBanner: false,
     );

@@ -1,3 +1,5 @@
+import 'package:clone_trust/app/ui/screen/SDWalkThroughScreen.dart';
+import 'package:clone_trust/app/ui/screen/WalkThroughScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:clone_trust/app/ui/buy_page.dart';
 import 'package:clone_trust/app/ui/dashboard_page.dart';
@@ -18,7 +20,12 @@ class AppRoutes {
 
       default:
         return MaterialPageRoute<dynamic>(
-            builder: (context) => const DashboardPage());
+            builder: (context) => DashboardPage());
+
+      // default:
+      //   return MaterialPageRoute<dynamic>(
+      //       builder: (context) => SDWalkThroughScreen(),
+      //       );
     }
   }
 }

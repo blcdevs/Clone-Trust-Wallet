@@ -95,7 +95,7 @@ class _DashboardPageState extends State<DashboardPage>
                       Column(children: [
                         const SizedBox(height: 40.0),
                         const Text(
-                          '21 070, 34 USD',
+                          '2,134 USD',
                           style: TextStyle(
                               fontSize: 35,
                               fontWeight: FontWeight.w400,
@@ -103,7 +103,7 @@ class _DashboardPageState extends State<DashboardPage>
                         ),
                         const SizedBox(height: 5.0),
                         const Text(
-                          '@JohnDoe',
+                          'My Wallet',
                           style: TextStyle(fontSize: 15, color: Colors.white70),
                         ),
                         const SizedBox(height: 40.0),
