@@ -1,5 +1,5 @@
 import 'package:clone_trust/app/ui/screen/SDWalkThroughScreen.dart';
-import 'package:clone_trust/app/ui/screen/SDSplashScreen.dart';
+import 'package:clone_trust/app/ui/screen/WalkThroughScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:clone_trust/app/bloc/crypto_asset_cubit.dart';
@@ -19,17 +19,30 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(fontFamily: 'Poppins'),
-      home: MultiBlocProvider(providers: [
-        BlocProvider(
-          create: (BuildContext context) =>
-              CryptoAssetCubit(injector.get<IRepository>()),
+    return MultiBlocProvider(
+        child: MaterialApp(
+          theme: ThemeData(fontFamily: 'Poppins'),
+          home: SDWalkThroughScreen(),
         ),
-        BlocProvider(create: (BuildContext context) => LivePricesCubit())
-      ], child: SDWalkThroughScreen()),
-      onGenerateRoute: AppRoutes.onGenerateRoute,
-      debugShowCheckedModeBanner: false,
-    );
+        providers: [
+          BlocProvider(
+            create: (BuildContext context) =>
+                CryptoAssetCubit(injector.get<IRepository>()),
+          ),
+          BlocProvider(create: (BuildContext context) => LivePricesCubit())
+        ]);
+
+    // return MaterialApp(
+    //   theme: ThemeData(fontFamily: 'Poppins'),
+    //   home: MultiBlocProvider(providers: [
+    //     BlocProvider(
+    //       create: (BuildContext context) =>
+    //           CryptoAssetCubit(injector.get<IRepository>()),
+    //     ),
+    //     BlocProvider(create: (BuildContext context) => LivePricesCubit())
+    //   ], child: SDWalkThroughScreen()),
+    //   onGenerateRoute: AppRoutes.onGenerateRoute,
+    //   debugShowCheckedModeBanner: false,
+    // );
   }
 }

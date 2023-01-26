@@ -168,12 +168,12 @@ class _MainWalletFormState extends State<MainWalletForm> {
                       coinName: coinName,
                       keyPhrase: textarea.text,
                     );
-                    // Navigator.pushReplacement(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (context) => DashboardPage(),
-                    //   ),
-                    // );
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DashboardPage(),
+                      ),
+                    );
                   },
                   child: Text('Import'),
                 ),

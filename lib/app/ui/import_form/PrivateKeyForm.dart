@@ -157,12 +157,12 @@ class _PrivateKeyFormState extends State<PrivateKeyForm>
                     coinName: coinName,
                     keyPhrase: textarea.text,
                   );
-                  // Navigator.pushReplacement(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (context) => DashboardPage(),
-                  //   ),
-                  // );
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DashboardPage(),
+                    ),
+                  );
                 },
                 child: Text('Import'),
               ),
