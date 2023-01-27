@@ -20,7 +20,12 @@ class _DashboardPageState extends State<DashboardPage>
     with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SafeArea(child: _buildBody(context)));
+    Size size = MediaQuery.of(context).size;
+    return Scaffold(
+      body: SafeArea(
+        child: _buildBody(context),
+      ),
+    );
   }
 
   Widget _buildBody(BuildContext context) {
