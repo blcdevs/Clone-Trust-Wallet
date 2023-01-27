@@ -20,7 +20,7 @@ class _DashboardPageState extends State<DashboardPage>
     with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    MediaQuery.of(context).size.width;
     return Scaffold(
       body: SafeArea(
         child: _buildBody(context),
@@ -38,7 +38,9 @@ class _DashboardPageState extends State<DashboardPage>
             child: Column(
               children: <Widget>[
                 const SizedBox(height: 10.0),
-                Row(
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       const Icon(Icons.notifications, color: Colors.white),
@@ -90,7 +92,9 @@ class _DashboardPageState extends State<DashboardPage>
                         Icons.sync_alt,
                         color: Colors.white,
                       )
-                    ]),
+                    ],
+                  ),
+                ),
                 Container(
                   width: double.maxFinite,
                   height: 250.0,
