@@ -33,59 +33,61 @@ class _DashboardPageState extends State<DashboardPage>
             child: Column(
               children: <Widget>[
                 const SizedBox(height: 10.0),
-                Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      const Icon(Icons.notifications, color: Colors.white),
-                      Container(
-                        height: 40.0,
-                        decoration: BoxDecoration(
-                          color: Colors.blue[800],
-                          borderRadius: BorderRadius.circular(12.0),
-                        ),
-                        child: TabBar(
-                          controller: _tabController,
-                          indicatorPadding: const EdgeInsets.all(2.0),
-                          indicator: BoxDecoration(
-                            borderRadius: BorderRadius.circular(11.0),
-                            color: Colors.blue[600],
+                Expanded(
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        const Icon(Icons.notifications, color: Colors.white),
+                        Container(
+                          height: 40.0,
+                          decoration: BoxDecoration(
+                            color: Colors.blue[800],
+                            borderRadius: BorderRadius.circular(12.0),
                           ),
-                          isScrollable: true,
-                          labelColor: Colors.white,
-                          unselectedLabelColor: Colors.white70,
-                          tabs: const <Widget>[
-                            SizedBox(
-                              width: 80.0,
-                              child: Text(
-                                "Coins",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(fontWeight: FontWeight.w500),
-                              ),
+                          child: TabBar(
+                            controller: _tabController,
+                            indicatorPadding: const EdgeInsets.all(2.0),
+                            indicator: BoxDecoration(
+                              borderRadius: BorderRadius.circular(11.0),
+                              color: Colors.blue[600],
                             ),
-                            SizedBox(
-                              width: 80.0,
-                              child: Text(
-                                "Finance",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(fontWeight: FontWeight.w500),
+                            isScrollable: true,
+                            labelColor: Colors.white,
+                            unselectedLabelColor: Colors.white70,
+                            tabs: const <Widget>[
+                              SizedBox(
+                                width: 80.0,
+                                child: Text(
+                                  "Coins",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(fontWeight: FontWeight.w500),
+                                ),
                               ),
-                            ),
-                            SizedBox(
-                              width: 80.0,
-                              child: Text(
-                                "Collectibles",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(fontWeight: FontWeight.w500),
+                              SizedBox(
+                                width: 80.0,
+                                child: Text(
+                                  "Finance",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(fontWeight: FontWeight.w500),
+                                ),
                               ),
-                            )
-                          ],
+                              SizedBox(
+                                width: 80.0,
+                                child: Text(
+                                  "Collectibles",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(fontWeight: FontWeight.w500),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      const Icon(
-                        Icons.sync_alt,
-                        color: Colors.white,
-                      )
-                    ]),
+                        const Icon(
+                          Icons.sync_alt,
+                          color: Colors.white,
+                        )
+                      ]),
+                ),
                 Container(
                   width: double.maxFinite,
                   height: 250.0,

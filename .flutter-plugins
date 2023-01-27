@@ -1,6 +1,11 @@
 # This is a generated file; do not edit or check into version control.
+camera=/home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/camera-0.10.2+1/
+camera_android=/home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/camera_android-0.10.2+3/
+camera_avfoundation=/home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/camera_avfoundation-0.9.10+2/
+camera_web=/home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/camera_web-0.3.1+1/
 connectivity_plus=/home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_plus-3.0.2/
 flutter_native_splash=/home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_native_splash-2.2.17/
+flutter_plugin_android_lifecycle=/home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.7/
 fluttertoast=/home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.1.2/
 nb_utils=/home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/nb_utils-4.6.25/
 path_provider=/home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.12/

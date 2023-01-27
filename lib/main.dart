@@ -23,6 +23,8 @@ class MyApp extends StatelessWidget {
         child: MaterialApp(
           theme: ThemeData(fontFamily: 'Poppins'),
           home: SDWalkThroughScreen(),
+          debugShowCheckedModeBanner: false,
+          onGenerateRoute: AppRoutes.onGenerateRoute,
         ),
         providers: [
           BlocProvider(

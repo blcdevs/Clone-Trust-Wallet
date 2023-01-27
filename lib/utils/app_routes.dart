@@ -20,7 +20,7 @@ class AppRoutes {
 
       default:
         return MaterialPageRoute<dynamic>(
-            builder: (context) => DashboardPage());
+            builder: (context) => SDWalkThroughScreen());
 
       // default:
       //   return MaterialPageRoute<dynamic>(

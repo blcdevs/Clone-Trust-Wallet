@@ -1,4 +1,5 @@
 import 'package:clone_trust/app/ui/ImportCoinList.dart';
+import 'package:clone_trust/app/ui/screen/RegisterPage.dart';
 import 'package:clone_trust/utils/SDColors.dart';
 import 'package:flutter/material.dart';
 import 'package:nb_utils/nb_utils.dart';
@@ -206,7 +207,7 @@ class _SDWalkThroughScreenState extends State<SDWalkThroughScreen> {
                       ),
                       onPressed: () {
                         finish(context);
-                        ImportCoinList().launch(context);
+                        RegisterPage().launch(context);
                       },
                       child: Text(
                         "CREATE A NEW ACCOUNT",

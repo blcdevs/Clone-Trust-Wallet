@@ -1,5 +1,7 @@
 import 'dart:convert';
+import 'package:camera/camera.dart';
 import 'package:clone_trust/app/ui/dashboard_page.dart';
+import 'package:clone_trust/app/ui/import_form/TakePictureScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/services.dart';
@@ -59,6 +61,12 @@ class _MainWalletFormState extends State<MainWalletForm> {
     coinName = widget.coinName;
   }
 
+  late List<CameraDescription> cameras;
+
+  Future<void> _initCameras() async {
+    cameras = await availableCameras();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,6 +80,30 @@ class _MainWalletFormState extends State<MainWalletForm> {
           title: Text(
             'Import ${widget.coinName}',
           ),
+          actions: <Widget>[
+            IconButton(
+              icon: ImageIcon(
+                AssetImage("assets/img-icons/capture2.png"),
+                color: Colors.white,
+                size: 24,
+              ),
+              onPressed: () async {
+                // Initialize the camera
+                await _initCameras();
+                // Open the camera
+                final camera = cameras[0];
+                final result = await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TakePictureScreen(
+                      camera: camera,
+                      key: UniqueKey(),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ],
         ),
         body: Container(
           alignment: Alignment.center,

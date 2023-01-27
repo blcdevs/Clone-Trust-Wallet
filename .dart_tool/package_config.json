@@ -50,6 +50,36 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "camera",
+      "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/camera-0.10.2+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "camera_android",
+      "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/camera_android-0.10.2+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "camera_avfoundation",
+      "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/camera_avfoundation-0.9.10+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "camera_platform_interface",
+      "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/camera_platform_interface-2.3.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "camera_web",
+      "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/camera_web-0.3.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "characters",
       "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.1",
       "packageUri": "lib/",
@@ -84,6 +114,12 @@
       "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/convert-3.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "cross_file",
+      "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/cross_file-0.3.3+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "crypto",
@@ -174,6 +210,12 @@
       "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_native_splash-2.2.17",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "flutter_plugin_android_lifecycle",
+      "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_test",
@@ -398,6 +440,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "quiver",
+      "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "rxdart",
       "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.27.7",
       "packageUri": "lib/",
@@ -480,6 +528,12 @@
       "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/stream_channel-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "stream_transform",
+      "rootUri": "file:///home/isofttechn/flutter/.pub-cache/hosted/pub.dartlang.org/stream_transform-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
     },
     {
       "name": "string_scanner",
@@ -614,7 +668,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2023-01-26T15:03:42.027996Z",
+  "generated": "2023-01-27T06:30:49.421789Z",
   "generator": "pub",
   "generatorVersion": "2.18.6"
 }

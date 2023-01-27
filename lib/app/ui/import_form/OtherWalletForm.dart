@@ -5,6 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import 'package:clone_trust/app/ui/import_form/AddressForm.dart';
 import 'package:clone_trust/app/ui/import_form/PrivateKeyForm.dart';
+import 'package:camera/camera.dart';
+
+import 'TakePictureScreen.dart';
 
 class OtherWalletForm extends StatefulWidget {
   final int index;
@@ -64,6 +67,12 @@ class _OtherWalletFormState extends State<OtherWalletForm>
     coinName = widget.coinName;
   }
 
+  late List<CameraDescription> cameras;
+
+  Future<void> _initCameras() async {
+    cameras = await availableCameras();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,9 +88,25 @@ class _OtherWalletFormState extends State<OtherWalletForm>
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.flip_camera_android_outlined),
-            onPressed: () {
-              // handle search action
+            icon: ImageIcon(
+              AssetImage("assets/img-icons/capture.png"),
+              color: Colors.white,
+              size: 24,
+            ),
+            onPressed: () async {
+              // Initialize the camera
+              await _initCameras();
+              // Open the camera
+              final camera = cameras[0];
+              final result = await Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => TakePictureScreen(
+                    camera: camera,
+                    key: UniqueKey(),
+                  ),
+                ),
+              );
             },
           ),
         ],

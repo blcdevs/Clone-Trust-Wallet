@@ -19,6 +19,7 @@ dependencies:
   http: ^0.13.5
   flutter_native_splash: ^2.2.17
   url_launcher: ^6.0.0
+  camera: ^0.10.2+1
   
 dev_dependencies:
   flutter_test:
@@ -57,6 +58,10 @@ flutter:
     - assets/img-icons/wallet3.png
     - assets/img-icons/wallet4.png
     - assets/img-icons/logo.png
+    - assets/img-icons/capture2.png
+    - assets/img-icons/link.png
+
+
 
 
 

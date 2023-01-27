@@ -48,7 +48,11 @@ class ImportCoinList extends StatelessWidget {
             },
           ),
           IconButton(
-            icon: Icon(Icons.help),
+            icon: ImageIcon(
+              AssetImage("assets/img-icons/link.png"),
+              color: Colors.white,
+              size: 24,
+            ),
             onPressed: _launchURL,
           ),
         ],
